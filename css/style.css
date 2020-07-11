@@ -111,15 +111,15 @@ h1 {
 }
 .autom {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .plus:not(:last-child) {
     margin-bottom: 20px;
 }
 .text p {
-    font-size: 24px;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.3) ;
-    border-radius: 15px 0px;    
+    font-size: 24px; 
 }
 .text h1 {
     padding-bottom: 20px;
@@ -127,12 +127,16 @@ h1 {
 }
 .plus {
     display: flex;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3) ;
+    border-radius: 15px 0px;
+    width: fit-content;
+    padding: 4px; 
 }
 .points {
     display: block;
-    height: 400px;
     width: 100%;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 .pic {
     display: flex;
@@ -146,12 +150,12 @@ h2 {
     padding-bottom: 50px;
 }
 
-img {
+/* img {
     display: inline-block;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-    }
+    } */
 
 .text2 {
     padding-left: 200px;
@@ -172,7 +176,8 @@ img {
     padding: 20px;
     border-radius: 20px;
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.31));
-    width: 150px;
+    width: 200px;
+    min-height: 230px;
 }
 .flex-item img {
     display: block;
@@ -187,16 +192,23 @@ h3 {
 
 }
 .content {
-    background-color: rgb(23, 75, 218);
+    background-image: url(../img/prew.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     display: flex;
     justify-content: space-around;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .woman {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.woman img {
+    min-width: 350px;
 }
 
 h4 {
@@ -267,7 +279,7 @@ h4 {
 }
 .doc {
     width: 100%;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.31);
+    /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.31); */
     border-radius: 0px;
     display: flex;
     justify-content: space-around;

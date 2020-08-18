@@ -51,7 +51,6 @@ a:not([class]) {
 /* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
-  display: block;
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
@@ -84,10 +83,6 @@ html, body {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-}
-.big-container {
-    max-width: 2000px;
-    margin: 0 auto;
 }
 h1 {
     color: #ffffff;
@@ -138,6 +133,8 @@ h1 {
     display: block;
     width: 100%;
     padding: 50px 0;
+    padding-bottom: 119px;
+    
 }
 .pic {
     display: flex;
@@ -148,7 +145,7 @@ h2 {
     color: rgb(0, 0, 0);
     font-size: 48px;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 /* img {
@@ -200,7 +197,7 @@ h3 {
     position: relative;
     display: flex;
     justify-content: space-around;
-    padding: 100px 0;
+    padding: 118px 0;
 }
 
 .woman {
@@ -216,7 +213,7 @@ h3 {
 h4 {
     color: #ffffff;
     font-size: 48px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 
 }
 .steps {
@@ -242,9 +239,12 @@ h4 {
     color: #5986F7;
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 12px 9px;
+    padding: 3px;
     font-size: 24px;
-    margin-right: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-right: 10px;
+    display: inline-table;
 }
 
 .call {
@@ -286,32 +286,30 @@ h4 {
     display: flex;
     justify-content: space-around;
     color: black;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.docs {
-    position: relative;
+    padding: 110px 0 236px;
 }
 .doc-item {
     background-color: rgba(192,192,192, 0.3);
-    border-radius: 15px;
-    padding: 15px;
+    border-radius: 25.5px;
     width: fit-content;
+    padding: 15px 24px 15px 3px;
 }
 .doc-item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .docs p {
     font-size: 18px;
+    line-height: 22px;
 }
 .doc h1 {
     color: black;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 .docs-img {
     float: right;
     display: flex;
     align-items: center;
+    padding-top: 47px;
 }
 .span {
     color: white;
@@ -321,20 +319,21 @@ h4 {
     font-size: 24px;
     padding-left: 9px;
     padding-right: 9px;
-    margin-right: 3px;
+    margin-right: 10px;
 }
 .we {
-    height: 550px;
-    background-color: #5986F7;
     display: block;
-    display: block;
+    background-image: url(../img/prew.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0;
 }
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 100px;
+
 }
 .about p {
     color: white;
@@ -362,18 +361,20 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 150px;
+    width: 211px;
+    min-height: 256px;
 }
 .round {
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 90px;
+    width: 90px;
     margin: 0 auto;
 }
 .round img{
     height: 100%;
     max-width: 28px;
     vertical-align: middle;
+    margin: 0 auto;
 }
 .round-pink {
     background: #FF9775;
@@ -427,6 +428,7 @@ h4 {
     height: 600px;
     width: 100%;
     margin-left: -8px;
+    padding: 70px 0;
 
 }
 .reviews h1 {
@@ -434,6 +436,7 @@ h4 {
     font-size: 48px;
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 .box-feedback {
     display: flex;
@@ -452,15 +455,26 @@ h4 {
     font-size: 18px;
     color: #B2B2B2;
 }
+.names {
+    margin-right: 62px;
+}
 .one {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.31);
     border-radius: 10px;
     width: 80%;
-    margin: 20px;
+    display: flex;
+    align-items: center;
+    width: 1112px;
+    min-height: 92px;
 }
 .one img {
     width: 62px;
     height: 62px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.one:not(:last-child) {
+    margin-bottom: 20px;
 }
 .contacts {
     width: 100%;

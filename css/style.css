@@ -225,9 +225,10 @@ h4 {
 }
 .step {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 6px;
+    width: fit-content;
 }
 .steps p {
     color: #ffffff;
@@ -239,11 +240,10 @@ h4 {
     color: #5986F7;
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 3px;
     font-size: 24px;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding: 0px 9px;
     margin-right: 10px;
+    font-weight: bold;
     display: inline-table;
 }
 
@@ -294,6 +294,14 @@ h4 {
     width: fit-content;
     padding: 15px 24px 15px 3px;
 }
+.doc-item2 {
+    background-color: rgba(255, 92, 92, 0.1);;
+    border-radius: 25.5px;
+    width: fit-content;
+    color: #FF5C5C;
+    padding: 15px 24px 15px 3px;
+    margin-top: 50px;
+}
 .doc-item:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -315,10 +323,16 @@ h4 {
     color: white;
     background-color: #5986F7;
     border-radius: 50%;
-    padding: 3px;
     font-size: 24px;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding: 3px 9px;
+    margin-right: 10px;
+}
+.span2 {
+    color: white;
+    background-color: #FF5C5C;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 3px 9px;
     margin-right: 10px;
 }
 .we {
@@ -341,7 +355,7 @@ h4 {
 .about h1 {
     padding-bottom: 20px;
 }
-.span2 {
+.span3 {
     color: white;
 }
 .stat {
@@ -377,19 +391,19 @@ h4 {
     margin: 0 auto;
 }
 .round-pink {
-    background: #FF9775;
+    background: rgba(255, 151, 117, 0.3);;
 }
 .round-green {
-    background: #8DD070;
+    background: rgba(141, 208, 112, 0.3);
 }
 .round-blue {
-    background: #5986F7;
+    background: rgba(89, 134, 247, 0.3);;
 }
 .round-yellow {
-    background: #FFCB12;
+    background: rgba(255, 203, 18, 0.3);;
 }
 .round-darkblue {
-    background: #12E3FF;
+    background: rgba(18, 227, 255, 0.3);
 }
 .calling {
     display: flex;
@@ -477,24 +491,70 @@ h4 {
     margin-bottom: 20px;
 }
 .contacts {
-    width: 100%;
-    height: 700px;
+    display: flex;
+    background-image: url(../img/prew.png);
+
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    max-width: 650px;
+    padding-top: 182px;
+    padding-bottom: 182px;
 }
 .contacts h1 {
     color: white;
-    position: absolute;
-    padding-top: 70px;
-    padding-left: 30px;
+    padding-bottom: 24px;
 }
 .contacts p {
     color: white;
     position: relative;
 }
-.contacts img {
-    position: absolute;
+.contacts p:not(:last-child) {
+    margin-bottom: 22px;
 }
-.contacts a {
-    color: violet;
+.nomber {
+    font-size: 36px;
+}
+.adres {
+    font-size: 36px;
+}
+
+.time {
+    font-size: 18px;
+}
+
+.mail {
+    font-size: 36px;
+}
+.maps {
+    padding-right: 120px;
+    padding-top: 144px;
+}
+.footer {
+    background-image: url(../img/fon.png);
+}
+.footer h1 {
+    font-size: 18px;
+    color: #ffffff;
+}
+.footer p {
+    font-size: 18px;
+    color: #ffffff;
+}
+.doc1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 750px;
+}
+.foot {
+    padding-top: 40px;
+    font-size: 14px;
+}
+/*.friend {
+    display: flex;
 }
 
 /*@media (max-width: 600px) {
